@@ -6,10 +6,9 @@ import { db } from "@/lib/db";
 const handler = NextAuth({
   providers: [
     GoogleProvider({
-      // clientId: process.env.GOOGLE_CLIENT_ID ?? "",
-      // clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",
-      clientId: process.env.GOOGLE_CLIENT_ID ?? "921325980041-mnk3kn026apvt1n2191hhav4afs9vb52.apps.googleusercontent.com",
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "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",
+      clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ?? "",
+      clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET ?? "",
+     
     }),
   ],
   callbacks: {
